@@ -28,5 +28,18 @@ This is the home directory of the user BS-1565.
 <img width="728" height="207" alt="image" src="https://github.com/user-attachments/assets/5c06340b-abf5-4fee-b940-64c98bd38327" />
 
 
+# Project-2
+`mkdir -p devops/project/logs`
+- -p -> Creates parent directories automatically
+
+
+<img width="793" height="378" alt="image" src="https://github.com/user-attachments/assets/8695dcb1-0107-4276-9a2b-9bc5239cda17" />
+
+
+
+### Breaking down 640
+6 → Owner
+4 → Group
+0 → Others
 
 
