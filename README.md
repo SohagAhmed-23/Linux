@@ -25,6 +25,8 @@
 - welcome.txt → the file you want to copy
 - /home/BS-1565/ → the destination folder
 This is the home directory of the user BS-1565.
+<img width="728" height="207" alt="image" src="https://github.com/user-attachments/assets/5c06340b-abf5-4fee-b940-64c98bd38327" />
+
 
 
 
