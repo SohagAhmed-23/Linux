@@ -135,6 +135,62 @@ That & sends it to the background.
 <img width="1740" height="114" alt="image" src="https://github.com/user-attachments/assets/626fcf6b-2756-4a3e-96b1-399788798cde" />
 
 
+# Project - 9 - Shell Scripting Basics 
+### Script for backup
+`
+su - bs1366
+cat > ~/backup.sh <<'EOF'
+#!/bin/bash
+
+if [ -z "$1" ]; then
+  echo "Usage: $0 <directory_path>"
+  exit 1
+fi
+
+SRC_DIR="$1"
+
+if [ ! -d "$SRC_DIR" ]; then
+  echo "Error: '$SRC_DIR' does not exist or is not a directory."
+  exit 1
+fi
+
+DATE="$(date +%Y-%m-%d_%H-%M-%S)"
+DEST_DIR="$HOME/backups"
+mkdir -p "$DEST_DIR"
+
+BASE_NAME="$(basename "$SRC_DIR")"
+BACKUP_FILE="$DEST_DIR/${BASE_NAME}_backup_${DATE}.tar.gz"
+
+tar -czf "$BACKUP_FILE" -C "$(dirname "$SRC_DIR")" "$BASE_NAME"
+
+echo "Backup created: $BACKUP_FILE"
+ls -lh "$BACKUP_FILE"
+EOF
+`
+
+### Make it executable
+chmod x+ backup.sh
+
+<img width="690" height="160" alt="image" src="https://github.com/user-attachments/assets/b73e0c66-d2db-48c7-8cb5-7f18cb19792b" />
+
+## create a backup 
+<img width="743" height="115" alt="image" src="https://github.com/user-attachments/assets/a6544754-2fb7-412c-bef1-a2a00578bf04" />
+
+
+# project - 10 - Cron Job
+- write `write_time.sh` file for cronjob
+### Set up the crontab for every 5 min.
+-   <img width="721" height="377" alt="image" src="https://github.com/user-attachments/assets/eb17c741-963c-4098-9dd1-edf1f7e3467c" />
+### updating automatically
+<img width="731" height="333" alt="image" src="https://github.com/user-attachments/assets/632699fb-e6d3-4216-85d0-fb9812510996" />
+
+
+
+
+
+
+
+
 
 
 
