@@ -128,6 +128,12 @@ That & sends it to the background.
 ### TO see the network Connectivity 
 `ping google.com`
 - <img width="880" height="143" alt="image" src="https://github.com/user-attachments/assets/f117b389-8d86-4214-84a1-40a95b880f37" />
+## To see the list port 
+`ss -tulpen`
+<img width="1771" height="278" alt="image" src="https://github.com/user-attachments/assets/7e2a6d55-ffd7-448a-98f3-8d17184024de" />
+## To see which process is using port 22
+<img width="1740" height="114" alt="image" src="https://github.com/user-attachments/assets/626fcf6b-2756-4a3e-96b1-399788798cde" />
+
 
 
 
