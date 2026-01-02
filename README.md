@@ -1,4 +1,4 @@
-# Project - 1 -User & File Basics
+<img width="880" height="143" alt="image" src="https://github.com/user-attachments/assets/7fe5efe1-7436-499b-a2b7-ef9347c45150" /># Project - 1 -User & File Basics
 ### Create a new user
 `sudo useradd -m BS-1565`
 - useradd command to add a new user
@@ -105,9 +105,34 @@ That & sends it to the background.
 `systemctl status nginx`
 ### Start and stop the service.
 `systemctl start/stop nginx`
-# project - 7  
+# project - 7 - Log File Analysis
 ### View the last 50 lines of syslog.
 `tail -50 syslog`
+
+<img width="723" height="348" alt="image" src="https://github.com/user-attachments/assets/3ae0ee0a-233e-45d9-8910-8b9c80c8fafc" />
+
+
+### Search for "error" on syslog
+`grep -i "error" syslog`
+
+<img width="720" height="156" alt="image" src="https://github.com/user-attachments/assets/ff4db276-b82a-46b9-8c48-b062a49183d5" />
+### Save output to a file
+`tail -n 50 syslog | grep -i "error" > ~/error_log.txt`ls 
+
+<img width="720" height="226" alt="image" src="https://github.com/user-attachments/assets/84536a38-4ef1-4caf-b2f7-4b6db11d6dd7" />
+
+# project - 8 - Networking Basics
+### To show the Ip address
+`ip addr show`
+<img width="1082" height="432" alt="image" src="https://github.com/user-attachments/assets/efcb3f26-6378-4d96-82ae-6203ca17bb46" />
+### TO see the network Connectivity 
+`ping google.com`
+- <img width="880" height="143" alt="image" src="https://github.com/user-attachments/assets/f117b389-8d86-4214-84a1-40a95b880f37" />
+
+
+
+
+
 
 
 
