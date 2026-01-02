@@ -1,4 +1,5 @@
-<img width="880" height="143" alt="image" src="https://github.com/user-attachments/assets/7fe5efe1-7436-499b-a2b7-ef9347c45150" /># Project - 1 -User & File Basics
+
+# Project - 1 -User & File Basics
 ### Create a new user
 `sudo useradd -m BS-1565`
 - useradd command to add a new user
