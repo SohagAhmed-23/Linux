@@ -1,4 +1,4 @@
-# Project - 1
+# Project - 1 -User & File Basics
 ### Create a new user
 `sudo useradd -m BS-1565`
 - useradd command to add a new user
@@ -28,7 +28,7 @@ This is the home directory of the user BS-1565.
 <img width="728" height="207" alt="image" src="https://github.com/user-attachments/assets/5c06340b-abf5-4fee-b940-64c98bd38327" />
 
 
-# Project-2
+# Project-2 - Directory Structure & Permissions
 `mkdir -p devops/project/logs`
 - -p -> Creates parent directories automatically
 
@@ -41,7 +41,7 @@ This is the home directory of the user BS-1565.
 4 → Group
 0 → Others
 
-# Project-3
+# Project-3 - Ownership & Groups
 ### Create a group
 - `sudo groupadd devops`
 
@@ -56,7 +56,7 @@ This is the home directory of the user BS-1565.
 
   <img width="734" height="313" alt="image" src="https://github.com/user-attachments/assets/57aa92e7-2c4c-4e38-9044-f4ea5d599479" />
 
-# Project - 4
+# Project - 4 - File Search & Disk Usage
 
 `touch file1.txt file2.txt app.log system.log config.conf`
 
@@ -83,7 +83,7 @@ This is the home directory of the user BS-1565.
 <img width="742" height="219" alt="image" src="https://github.com/user-attachments/assets/aefe43b8-0fbc-46cf-8519-8e40e283eb69" />
 
 
-# Project 5
+# Project 5 - Process Managemen
 ### Start a background process
 `sleep 300 &`
 That & sends it to the background.
@@ -96,7 +96,20 @@ That & sends it to the background.
 
 <img width="743" height="357" alt="image" src="https://github.com/user-attachments/assets/b52e3bf6-f33a-43c0-8f26-4fda3d055d1e" />
 
-# project -6
+# project -6 - Package Management
+### Update package lists
+`apt update`
+### Install nginx
+`apt install nginx`
+### Check nginx service status.
+`systemctl status nginx`
+### Start and stop the service.
+`systemctl start/stop nginx`
+# project - 7  
+### View the last 50 lines of syslog.
+`tail -50 syslog`
+
+
 
 
 
