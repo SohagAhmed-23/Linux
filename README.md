@@ -36,10 +36,68 @@ This is the home directory of the user BS-1565.
 <img width="793" height="378" alt="image" src="https://github.com/user-attachments/assets/8695dcb1-0107-4276-9a2b-9bc5239cda17" />
 
 
-
 ### Breaking down 640
 6 → Owner
 4 → Group
 0 → Others
+
+# Project-3
+### Create a group
+- `sudo groupadd devops`
+
+### show that the group exists or not
+- `cat etc/group`
+
+### To change the owner
+`sudo chown BS-1565 teams.txt`
+
+### Change the group
+`sudo chown BS-1565:devops teams.txt`
+
+  <img width="734" height="313" alt="image" src="https://github.com/user-attachments/assets/57aa92e7-2c4c-4e38-9044-f4ea5d599479" />
+
+# Project - 4
+
+`touch file1.txt file2.txt app.log system.log config.conf`
+
+### Find all .log files
+`find ~ -type f -name "*.log"`
+
+- ~ → start searching from your home directory
+- -type f → files only
+- -name "*.log" → anything ending in .log
+
+### Check disk usage
+`du -sh ~`
+
+<img width="740" height="63" alt="image" src="https://github.com/user-attachments/assets/ae1d783b-b1f0-4464-8260-1d7aed2422f4" />
+
+
+### Identify the largest file
+`du -ah ~ | sort -rh | head -n 10`
+
+- du -ah ~ → size of all files, readable format
+- sort -rh → largest first
+- head -n 10 → top 10 biggest
+
+<img width="742" height="219" alt="image" src="https://github.com/user-attachments/assets/aefe43b8-0fbc-46cf-8519-8e40e283eb69" />
+
+
+# Project 5
+### Start a background process
+`sleep 300 &`
+That & sends it to the background.
+### List running processes & dentify the process ID (PID).
+- `ps or ps aux or specific ps aux | grep slep`
+### Kill the process
+`kill 40263`
+`kill -9 40263`
+- -9 → signal SIGKILL (force quit, no questions asked)
+
+<img width="743" height="357" alt="image" src="https://github.com/user-attachments/assets/b52e3bf6-f33a-43c0-8f26-4fda3d055d1e" />
+
+# project -6
+
+
 
 
